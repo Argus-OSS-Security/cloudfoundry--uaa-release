@@ -1,10 +1,11 @@
 name: Update Java Blob
 
-on:
-  schedule:
-    - cron: "0 1 * * *"
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   schedule:
+#     - cron: "0 1 * * *"
+#   workflow_dispatch:
+# 
 jobs:
   upgrade-java:
     runs-on: ubuntu-24.04

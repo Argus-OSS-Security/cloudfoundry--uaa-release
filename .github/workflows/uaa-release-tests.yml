@@ -1,11 +1,12 @@
 name: UAA Release Tests
 
-on:
-  push:
-    branches: [develop]
-  pull_request:
-    branches: [develop]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: [develop]
+#   pull_request:
+#     branches: [develop]
+# 
 jobs:
   rspec-template-tests:
     runs-on: ubuntu-24.04
